@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.alibaba.cola</groupId>
-        <artifactId>cola-components</artifactId>
+        <artifactId>roaker-framework-archetypes</artifactId>
         <version>5.x-SNAPSHOT</version>
     </parent>
 
-    <artifactId>cola-component-ruleengine</artifactId>
-    <packaging>jar</packaging>
-    <name>${project.artifactId}:${project.version}</name>
+    <artifactId>roaker-framework-archetype-web</artifactId>
+    <packaging>maven-archetype</packaging>
+    <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
     <url>https://github.com/alibaba/COLA</url>
 
@@ -53,18 +53,4 @@
             <url>https://github.com/oldratlee</url>
         </developer>
     </developers>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-        </dependency>
-
-        <!-- test dependencies -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
 </project>

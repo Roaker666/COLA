@@ -17,7 +17,7 @@
 
     <modules>
         <module>cola-components</module>
-        <module>cola-archetypes</module>
+        <module>roaker-framework-archetypes</module>
 
         <module>cola-samples/craftsman</module>
         <!-- A test failed module is better to get out. -->
