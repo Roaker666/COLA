@@ -6,23 +6,18 @@
     <!--
         a dummy aggregation parent pom for development.
 
-        simplify the development process for all cola modules including examples modules, e.g.
+        simplify the development process for all roaker modules including examples modules, e.g.
         - maven test/install
         - import to IDE
     -->
-    <groupId>com.alibaba.cola</groupId>
-    <artifactId>cola-dummy-aggregation-parent</artifactId>
-    <version>dummy-SNAPSHOT</version>
+    <groupId>io.github.roaker666</groupId>
+    <artifactId>roaker-dummy-aggregation-parent</artifactId>
+    <version>6.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>cola-components</module>
+        <module>roaker-components</module>
         <module>roaker-framework-archetypes</module>
-
-        <module>cola-samples/craftsman</module>
-        <!-- A test failed module is better to get out. -->
-        <!--
-        <module>cola-samples/charge</module>
-        -->
+        <module>roaker-samples/charge</module>
     </modules>
 </project>

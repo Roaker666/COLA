@@ -26,14 +26,14 @@ jobs:
       - name: Build with Maven
         run: ./mvnw -V --no-transfer-progress clean install
 
-      - name: remove cola self maven install files for OS *nix
-        run: rm -rf $HOME/.m2/repository/com/alibaba/{cola,craftsman}
+      - name: remove roaker self maven install files for OS *nix
+        run: rm -rf $HOME/.m2/repository/com/alibaba/{roaker,craftsman}
         # https://docs.github.com/en/actions/learn-github-actions/variables#detecting-the-operating-system
         # https://docs.github.com/en/actions/learn-github-actions/expressions
         if: runner.os != 'Windows'
-      - name: remove cola self maven install files for OS Windows
+      - name: remove roaker self maven install files for OS Windows
         run: |
-          Remove-Item -Recurse -Force $home/.m2/repository/com/alibaba/cola
+          Remove-Item -Recurse -Force $home/.m2/repository/com/alibaba/roaker
           Remove-Item -Recurse -Force $home/.m2/repository/com/alibaba/craftsman
         if: runner.os == 'Windows'
 

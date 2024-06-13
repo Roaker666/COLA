@@ -14,8 +14,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.alibaba.cola</groupId>
-            <artifactId>cola-component-dto</artifactId>
+            <groupId>io.github.roaker666</groupId>
+            <artifactId>roaker-component-dto</artifactId>
         </dependency>
         <dependency>
             <groupId>javax.validation</groupId>

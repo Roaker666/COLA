@@ -3,9 +3,9 @@
 #set( $symbol_escape = '\' )
 package ${package}.customer;
 
-import com.alibaba.cola.dto.MultiResponse;
-import com.alibaba.cola.dto.Response;
-import com.alibaba.cola.catchlog.CatchAndLog;
+import io.github.roaker666.dto.MultiResponse;
+import io.github.roaker666.dto.Response;
+import io.github.roaker666.catchlog.CatchAndLog;
 import ${package}.api.CustomerServiceI;
 import ${package}.dto.CustomerAddCmd;
 import ${package}.dto.CustomerListByNameQry;

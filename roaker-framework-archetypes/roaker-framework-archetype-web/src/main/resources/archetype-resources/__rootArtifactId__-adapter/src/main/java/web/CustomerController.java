@@ -3,8 +3,8 @@
 #set( $symbol_escape = '\' )
 package ${package}.web;
 
-import com.alibaba.cola.dto.MultiResponse;
-import com.alibaba.cola.dto.Response;
+import io.github.roaker666.dto.MultiResponse;
+import io.github.roaker666.dto.Response;
 import ${package}.api.CustomerServiceI;
 import ${package}.dto.CustomerAddCmd;
 import ${package}.dto.CustomerListByNameQry;
@@ -20,7 +20,7 @@ public class CustomerController {
 
     @GetMapping(value = "/helloworld")
     public String helloWorld(){
-        return "Hello, welcome to COLA world!";
+        return "Hello, welcome to roaker world!";
     }
 
     @GetMapping(value = "/customer")

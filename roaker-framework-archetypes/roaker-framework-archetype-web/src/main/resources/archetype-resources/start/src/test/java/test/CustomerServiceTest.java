@@ -3,7 +3,7 @@
 #set( $symbol_escape = '\' )
 package ${package}.test;
 
-import com.alibaba.cola.dto.Response;
+import io.github.roaker666.dto.Response;
 import ${package}.api.CustomerServiceI;
 import ${package}.dto.CustomerAddCmd;
 import ${package}.dto.data.CustomerDTO;

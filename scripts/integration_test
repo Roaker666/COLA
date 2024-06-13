@@ -45,18 +45,18 @@ extractFirstElementValueFromPom() {
   grep \<"$element"'>.*</'"$element"\> "$pom_file" | awk -F'</?'"$element"\> 'NR==1 {print $2}'
 }
 
-test_cola_archetype() {
+test_roaker_archetype() {
   (
     JVB_MVN_OPTS=("${JVB_DEFAULT_MVN_OPTS[@]}")
-    readonly archetype_name=cola-framework-archetype-service
+    readonly archetype_name=roaker-framework-archetype-service
 
     cu::head_line_echo "test archetype:generate by $archetype_name"
 
     # NOTE: DO NOT declare archetypeVersion var as readonly, its value is supplied by subshell.
-    archetypeVersion=$(extractFirstElementValueFromPom version cola-archetypes/cola-archetype-service/pom.xml)
+    archetypeVersion=$(extractFirstElementValueFromPom version roaker-archetypes/roaker-archetype-service/pom.xml)
 
     # shellcheck disable=SC2030
-    readonly demo_dir="cola-archetypes/target/$archetype_name-demo"
+    readonly demo_dir="roaker-archetypes/target/$archetype_name-demo"
     rm -rf "$demo_dir"
     mkdir -p "$demo_dir"
     cd "$demo_dir"
@@ -65,11 +65,11 @@ test_cola_archetype() {
     readonly artifactId=demo-service
 
     jvb::mvn_cmd archetype:generate \
-      -DgroupId=com.alibaba.cola.demo.archetype-service \
+      -DgroupId=io.github.roaker666.demo.archetype-service \
       -DartifactId="$artifactId" \
       -Dversion=1.0.0-SNAPSHOT \
-      -Dpackage=com.alibaba.cola.demo.service \
-      -DarchetypeGroupId=com.alibaba.cola \
+      -Dpackage=io.github.roaker666.demo.service \
+      -DarchetypeGroupId=io.github.roaker666 \
       -DarchetypeArtifactId=$archetype_name \
       -DarchetypeVersion="$archetypeVersion" \
       -DinteractiveMode=false \
@@ -81,15 +81,15 @@ test_cola_archetype() {
 
   (
     JVB_MVN_OPTS=("${JVB_DEFAULT_MVN_OPTS[@]}")
-    readonly archetype_name=cola-framework-archetype-web
+    readonly archetype_name=roaker-framework-archetype-web
 
     cu::head_line_echo "test archetype:generate by $archetype_name"
 
     # NOTE: DO NOT declare archetypeVersion var as readonly, its value is supplied by subshell.
-    archetypeVersion=$(extractFirstElementValueFromPom version cola-archetypes/cola-archetype-web/pom.xml)
+    archetypeVersion=$(extractFirstElementValueFromPom version roaker-archetypes/roaker-archetype-web/pom.xml)
 
     # shellcheck disable=SC2031
-    readonly demo_dir="cola-archetypes/target/$archetype_name-demo"
+    readonly demo_dir="roaker-archetypes/target/$archetype_name-demo"
     rm -rf "$demo_dir"
     mkdir -p "$demo_dir"
     cd "$demo_dir"
@@ -98,11 +98,11 @@ test_cola_archetype() {
     readonly artifactId=demo-web
 
     jvb::mvn_cmd archetype:generate \
-      -DgroupId=com.alibaba.cola.demo.archetype-web \
+      -DgroupId=io.github.roaker666.demo.archetype-web \
       -DartifactId="$artifactId" \
       -Dversion=1.0.0-SNAPSHOT \
-      -Dpackage=com.alibaba.cola.demo.web \
-      -DarchetypeGroupId=com.alibaba.cola \
+      -Dpackage=io.github.roaker666.demo.web \
+      -DarchetypeGroupId=io.github.roaker666 \
       -DarchetypeArtifactId=$archetype_name \
       -DarchetypeVersion="$archetypeVersion" \
       -DinteractiveMode=false \
@@ -124,7 +124,7 @@ cu::head_line_echo "build and test with Java $default_build_jdk_version: $JAVA_H
 
 jvb::mvn_cmd clean install
 
-test_cola_archetype
+test_roaker_archetype
 
 ########################################
 # test by multiply version jdks
@@ -143,5 +143,5 @@ for jdk_version in "${JDK_VERSIONS[@]}"; do
   # just test without build
   jvb::mvn_cmd surefire:test
 
-  test_cola_archetype
+  test_roaker_archetype
 done

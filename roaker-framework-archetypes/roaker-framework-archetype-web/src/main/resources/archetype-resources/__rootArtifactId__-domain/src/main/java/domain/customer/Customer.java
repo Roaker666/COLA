@@ -3,8 +3,8 @@
 #set( $symbol_escape = '\' )
 package ${package}.domain.customer;
 
-import com.alibaba.cola.domain.Entity;
-import com.alibaba.cola.exception.BizException;
+import io.github.roaker666.domain.Entity;
+import io.github.roaker666.exception.BizException;
 import lombok.Data;
 
 //Domain Entity can choose to extend the domain model which is used for DTO

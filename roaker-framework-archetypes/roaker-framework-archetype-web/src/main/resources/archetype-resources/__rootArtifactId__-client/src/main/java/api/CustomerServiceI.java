@@ -3,8 +3,8 @@
 #set( $symbol_escape = '\' )
 package ${package}.api;
 
-import com.alibaba.cola.dto.MultiResponse;
-import com.alibaba.cola.dto.Response;
+import io.github.roaker666.dto.MultiResponse;
+import io.github.roaker666.dto.Response;
 import ${package}.dto.CustomerAddCmd;
 import ${package}.dto.CustomerListByNameQry;
 import ${package}.dto.data.CustomerDTO;

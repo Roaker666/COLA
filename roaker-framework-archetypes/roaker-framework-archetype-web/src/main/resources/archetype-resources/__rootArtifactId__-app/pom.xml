@@ -23,8 +23,8 @@
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.cola</groupId>
-            <artifactId>cola-component-catchlog-starter</artifactId>
+            <groupId>io.github.roaker666</groupId>
+            <artifactId>roaker-component-catchlog-starter</artifactId>
         </dependency>
 
         <!-- JSR 303 Validation -->
