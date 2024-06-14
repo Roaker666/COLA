@@ -74,7 +74,7 @@
         <fastjson2.version>2.0.51</fastjson2.version>
         <maven-resources.version>3.3.1</maven-resources.version>
         <maven-compiler.version>3.13.0</maven-compiler.version>
-        <maven-source.version>3.2.1</maven-source.version>
+        <maven-source.version>3.3.1</maven-source.version>
         <maven-gpg.version>3.2.4</maven-gpg.version>
         <maven-enforcer.version>3.5.0</maven-enforcer.version>
         <maven-javadoc.version>3.6.3</maven-javadoc.version>
