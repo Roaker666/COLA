@@ -11,22 +11,22 @@
     <packaging>jar</packaging>
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
-    <url>https://github.com/alibaba/roaker</url>
+    <url>https://github.com/Roaker666/COLA</url>
 
     <licenses>
         <license>
             <name>GNU Lesser General Public License v2.1</name>
-            <url>https://github.com/alibaba/roaker/blob/master/LICENSE</url>
+            <url>https://github.com/Roaker666/COLA/blob/master/LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/alibaba/roaker.git</connection>
-        <developerConnection>scm:git:https://github.com/alibaba/roaker.git</developerConnection>
-        <url>https://github.com/alibaba/roaker</url>
+        <connection>scm:git:https://github.com/Roaker666/COLA.git</connection>
+        <developerConnection>scm:git:https://github.com/Roaker666/COLA.git</developerConnection>
+        <url>https://github.com/Roaker666/COLA</url>
     </scm>
     <issueManagement>
-        <url>https://github.com/alibaba/roaker/issues</url>
+        <url>https://github.com/Roaker666/COLA/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
     <developers>

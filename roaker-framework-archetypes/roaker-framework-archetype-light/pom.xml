@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.github.roaker666</groupId>
         <artifactId>roaker-framework-archetypes</artifactId>
-        <version>6.0.1-SNAPSHOT</version>
+        <version>6.0.1</version>
     </parent>
 
     <artifactId>roaker-framework-archetype-light</artifactId>

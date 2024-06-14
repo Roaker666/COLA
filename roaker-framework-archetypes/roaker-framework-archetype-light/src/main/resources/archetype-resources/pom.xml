@@ -12,7 +12,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <roaker.components.version>6.0.1-SNAPSHOT</roaker.components.version>
+        <roaker.components.version>6.0.1</roaker.components.version>
         <knife4j.version>4.5.0</knife4j.version>
         <spring-boot.version>3.3.0</spring-boot.version>
         <mybatis-plus.version>3.5.7</mybatis-plus.version>
@@ -30,8 +30,8 @@
         <lang3.version>3.14.0</lang3.version>
         <maven-resources.version>3.3.1</maven-resources.version>
         <maven-compiler.version>3.13.0</maven-compiler.version>
-        <maven-source.version>3.3.1</maven-source.version>
-        <maven-javadoc.version>3.7.0</maven-javadoc.version>
+        <maven-source.version>3.2.1</maven-source.version>
+        <maven-javadoc.version>3.6.3</maven-javadoc.version>
         <maven-deploy.version>3.1.2</maven-deploy.version>
         <lombok.version>1.18.32</lombok.version>
         <guava.version>33.2.1-jre</guava.version>

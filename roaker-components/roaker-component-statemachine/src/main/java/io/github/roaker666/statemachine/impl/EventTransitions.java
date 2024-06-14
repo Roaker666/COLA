@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * EventTransitions
  *
- * 同一个Event可以触发多个Transitions，https://github.com/alibaba/roaker/pull/158
+ * 同一个Event可以触发多个Transitions，https://github.com/Roaker666/COLA/pull/158
  *
  * @author Frank Zhang
  * @date 2021-05-28 5:17 PM

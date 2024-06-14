@@ -10,26 +10,26 @@
     -->
     <groupId>io.github.roaker666</groupId>
     <artifactId>roaker-components-bom</artifactId>
-    <version>6.0.1-SNAPSHOT</version>
+    <version>6.0.1</version>
     <packaging>pom</packaging>
     <name>${project.artifactId}</name>
     <description>${project.artifactId}</description>
-    <url>https://github.com/alibaba/roaker</url>
+    <url>https://github.com/Roaker666/COLA</url>
 
     <licenses>
         <license>
             <name>GNU Lesser General Public License v2.1</name>
-            <url>https://github.com/alibaba/roaker/blob/master/LICENSE</url>
+            <url>https://github.com/Roaker666/COLA/blob/master/LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/alibaba/roaker.git</connection>
-        <developerConnection>scm:git:https://github.com/alibaba/roaker.git</developerConnection>
-        <url>https://github.com/alibaba/roaker</url>
+        <connection>scm:git:https://github.com/Roaker666/COLA.git</connection>
+        <developerConnection>scm:git:https://github.com/Roaker666/COLA.git</developerConnection>
+        <url>https://github.com/Roaker666/COLA</url>
     </scm>
     <issueManagement>
-        <url>https://github.com/alibaba/roaker/issues</url>
+        <url>https://github.com/Roaker666/COLA/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
     <developers>
@@ -113,7 +113,7 @@
                 </plugin>
                 <plugin>
                     <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>3.7.0</version>
+                    <version>3.1.2</version>
                 </plugin>
                 <plugin>
                     <artifactId>maven-deploy-plugin</artifactId>
@@ -136,7 +136,7 @@
                 <plugins>
                     <plugin>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>3.1.0</version>
+                        <version>3.2.4</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
@@ -161,14 +161,13 @@
             <build>
                 <plugins>
                     <plugin>
-                        <groupId>org.sonatype.plugins</groupId>
-                        <artifactId>nexus-staging-maven-plugin</artifactId>
-                        <version>1.6.13</version>
+                        <groupId>org.sonatype.central</groupId>
+                        <artifactId>central-publishing-maven-plugin</artifactId>
+                        <version>0.4.0</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>ossrh</serverId>
-                            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                            <publishingServerId>ossrh</publishingServerId>
+                            <tokenAuth>true</tokenAuth>
                         </configuration>
                     </plugin>
                 </plugins>

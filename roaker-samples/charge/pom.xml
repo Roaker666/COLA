@@ -6,7 +6,7 @@
 
     <groupId>com.huawei</groupId>
     <artifactId>charging-system</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>6.0.1</version>
 
     <properties>
         <java.version>17</java.version>
@@ -63,7 +63,7 @@
         <dependency>
             <groupId>io.github.roaker666</groupId>
             <artifactId>roaker-component-test-container</artifactId>
-            <version>6.0.1-SNAPSHOT</version>
+            <version>6.0.1</version>
         </dependency>
         <!--this for embedded database unit test-->
         <dependency>
