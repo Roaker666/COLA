@@ -70,7 +70,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.boot.version>3.3.0</spring.boot.version>
+        <spring.boot.version>3.3.1</spring.boot.version>
         <fastjson2.version>2.0.51</fastjson2.version>
         <maven-resources.version>3.3.1</maven-resources.version>
         <maven-compiler.version>3.13.0</maven-compiler.version>
